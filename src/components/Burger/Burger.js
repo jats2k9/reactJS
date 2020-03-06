@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
+import classess from './Burger.css'
+import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
-class Burger extends Component {
+const burger = (props) => {
+    return (
+        <div className={classess.Burger}>
+            <BurgerIngredient type="bread-top"/>
+            <BurgerIngredient type="cheese"/>
+            <BurgerIngredient type="meat"/>
+            <BurgerIngredient type="bread-bottom"/>
+        </div>
+    );
+};
 
-    render() {
-        return (
-            <div></div>
-        );
-    }
-}
+export default burger;
