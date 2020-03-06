@@ -15,11 +15,12 @@ const burger = (props) => {
     if (ingredients.length === 0) {
         ingredients = <p>Please add ingredients</p>
     }
-    console.log(props);
 
     return (
         <div className={classes.Burger}>
+            <BurgerIngredient type={'bread-top'}/>
             {ingredients}
+            <BurgerIngredient type={'bread-bottom'}/>
         </div>
     );
 };
